@@ -1,0 +1,46 @@
+package prova01;
+
+import javax.swing.JOptionPane;
+
+public class pessoa {
+	String nome, sexo;
+	int RG, Ano_Nasc;
+	
+	String imprimir_nome(){
+		JOptionPane.showMessageDialog(null, "Nome: "+nome);
+		return nome;
+	}
+	String imprimir_sexo(){
+		JOptionPane.showMessageDialog(null, "Sexo: "+sexo);
+		return sexo;
+	}
+	int imprimir_rg(){
+		JOptionPane.showMessageDialog(null, "RG: "+RG);
+		return RG;
+	}
+	int imprimir_AnodeNasc(){
+		JOptionPane.showMessageDialog(null, "Ano de Nascimento: "+Ano_Nasc);
+		return Ano_Nasc;
+	}
+	
+	void imprimir_masculino(){
+		if(sexo.equals("masculino")){
+		JOptionPane.showMessageDialog(null, "Dados da(s) pessoa(s) do sexo Masculino");
+		JOptionPane.showMessageDialog(null, "Nome: "+nome);
+		JOptionPane.showMessageDialog(null, "Sexo: "+sexo);
+		JOptionPane.showMessageDialog(null, "RG: "+RG);
+		JOptionPane.showMessageDialog(null, "Ano de Nascimento: "+Ano_Nasc);
+		}
+	}
+	void imprimir_velho(){
+		int menor = 3000;
+		if(Ano_Nasc < menor){
+			menor = Ano_Nasc;
+			JOptionPane.showMessageDialog(null, "Dados da pessoa mais velha");
+			JOptionPane.showMessageDialog(null, "Nome: "+nome);
+			JOptionPane.showMessageDialog(null, "Sexo: "+sexo);
+			JOptionPane.showMessageDialog(null, "RG: "+RG);
+			JOptionPane.showMessageDialog(null, "Ano de Nascimento: "+Ano_Nasc);
+		}
+	}
+}

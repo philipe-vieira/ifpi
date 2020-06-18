@@ -1,0 +1,42 @@
+package prova01;
+
+import javax.swing.JOptionPane;
+
+public class Inserir_Dados {
+
+	public static void main(String[] args) {
+		pessoa p1 = new pessoa();
+		pessoa p2 = new pessoa();
+				
+		JOptionPane.showMessageDialog(null, "Primeira Pessoa");
+		p1.inserir();
+		
+		JOptionPane.showMessageDialog(null, "Segunda Pessoa");
+		p2.inserir();
+		
+		JOptionPane.showMessageDialog(null, "Dados da primeira pessoa");
+		p1.imprimir_nome();
+		p1.imprimir_sexo();
+		p1.imprimir_rg();
+		p1.imprimir_AnodeNasc();
+		JOptionPane.showMessageDialog(null, "Dados da segunda pessoa");
+		p2.imprimir_nome();
+		p2.imprimir_sexo();
+		p2.imprimir_rg();
+		p2.imprimir_AnodeNasc();
+		
+		p1.imprimir_masculino();
+		p2.imprimir_masculino();
+		
+		if(p1.Ano_Nasc < p2.Ano_Nasc){
+		p1.imprimir_velho();
+		}
+		else if(p1.Ano_Nasc > p2.Ano_Nasc){
+		p2.imprimir_velho();
+		}
+		else{
+			JOptionPane.showMessageDialog(null, "As pessoas tem a mesma idade");
+		}
+	}
+
+}

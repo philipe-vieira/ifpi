@@ -1,0 +1,12 @@
+
+public class Pessoa {
+	String nome;
+	String sexo;
+	int rg;
+	int ano_nasc;
+	
+	
+	
+	
+	
+}

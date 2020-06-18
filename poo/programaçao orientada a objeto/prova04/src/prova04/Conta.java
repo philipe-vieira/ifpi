@@ -1,0 +1,70 @@
+package prova04;
+
+import javax.swing.JOptionPane;
+
+public class Conta {
+	int numero,saldo,valordepo,valorsaq,escolha;
+	String nome,tipo;
+	
+	void inserir(){
+		nome = JOptionPane.showInputDialog(null,"Digite o nome do titular: ");
+		tipo = JOptionPane.showInputDialog(null,"Digite o tipo de conta: \nConta poupança. \nConta corrente.");
+		numero = Integer.parseInt(JOptionPane.showInputDialog(null,"Digite o numero da conta:"));
+		saldo = Integer.parseInt(JOptionPane.showInputDialog(null,"Digite o saldo da conta:"));
+	}
+	
+	void imprimir(){
+		JOptionPane.showMessageDialog(null, "Nome da pessoa: "+nome+"\nNumero da conta: "+numero+"\nTipo de conta: "+tipo+"\nSaldo da conta: "+saldo);
+		
+	}
+	
+	int deposito(){
+		valordepo = Integer.parseInt(JOptionPane.showInputDialog(null,"digite o valor do deposito:"));
+		saldo = saldo + valordepo;
+		JOptionPane.showMessageDialog(null, "O saldo é igual a: "+saldo);
+		return saldo;
+		
+	}
+	
+	int saque(){
+		valorsaq = Integer.parseInt(JOptionPane.showInputDialog(null,"digite o valor do saque:"));
+		if (valorsaq <= saldo){
+			saldo = saldo - valorsaq;
+			}
+		else {
+			JOptionPane.showMessageDialog(null, "Saldo insuficiente.");
+		}
+		JOptionPane.showMessageDialog(null, "O saldo é igual a: "+saldo);
+		return saldo;
+	}
+	void menu(){
+		escolha = Integer.parseInt(JOptionPane.showInputDialog(null,"Qual operaçao você deseja fazer? "
+				+ "\n\n1-Deposito \n2-Saque \n3-Mostrar saldo \n4-Informações do titular"));
+		if (escolha == 1){
+			deposito();
+		}
+		else if(escolha == 2){
+			saque();
+		}
+		else if(escolha == 3){
+			JOptionPane.showMessageDialog(null, "O saldo é igual a: "+saldo);
+		}
+		else if(escolha == 4){
+			imprimir();
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "A escolha é invalida");
+		}
+		
+	}
+	
+	void volta(){
+		int escol;
+		do{
+			escol = Integer.parseInt(JOptionPane.showInputDialog(null, "Deseja fazer outra operação: \n1-sim \n2-não"));
+			if (escol == 1){
+				menu();
+			}
+		}while(escol == 1) ;
+	}
+}

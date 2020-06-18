@@ -1,0 +1,13 @@
+package prova02;
+
+public class questao2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		automovel car1 = new automovel();
+		
+		
+
+	}
+
+}

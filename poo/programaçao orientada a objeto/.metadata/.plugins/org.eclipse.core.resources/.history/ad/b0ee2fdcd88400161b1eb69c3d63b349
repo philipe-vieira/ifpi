@@ -1,0 +1,9 @@
+package prova02;
+
+public class automovel {
+	String modelo;
+	double cor;
+	int 1,2,3,4; 
+	
+	boo
+}

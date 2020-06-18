@@ -1,0 +1,33 @@
+package prova03;
+
+import javax.swing.JOptionPane;
+
+public class Calculadora {
+	private int x, y;
+	
+	void inserir(){
+		x = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro valor "));
+		y = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo valor valor "));
+	}
+	int Somar(){
+		return x + y;
+	}
+	
+	int Subtrair(){
+		return x - y;
+	}
+	
+	int Multiplicar(){
+		return x * y;
+	}
+	
+	float Dividir(){
+		Object result;
+		result = x / y;
+		if(y == 0){
+			JOptionPane.showMessageDialog(null, "Operação Inválida\nNão existe divisão por Zero");
+			break.Dividir();
+		}
+			return (float) result;
+	}
+}

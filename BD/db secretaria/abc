@@ -1,0 +1,19 @@
+create database locadora;
+use locadora;
+
+create table cliente(
+codcliente int not null primary key,
+cpfcliente varchar(14) not null,
+nomecliente varchar(30) not null,
+dtnasc date not null,
+dtcadastro date not null,
+ufcliente varchar(2) not null,
+cidade varchar(30) not null
+);
+
+create table emprestimo(
+codemprestimo int not null primary key,
+dtemp date not null,
+ddp date not null,
+
+);

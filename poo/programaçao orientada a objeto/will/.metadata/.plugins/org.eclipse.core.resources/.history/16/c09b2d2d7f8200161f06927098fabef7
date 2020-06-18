@@ -1,0 +1,28 @@
+import javax.swing.JOptionPane;
+
+public class testaAutomovel {
+
+	public static void main(String[] args) {
+		automovel auto1 = new automovel();
+		automovel auto2 = new automovel();
+		
+		auto1.modelo =Integer.parseInt(JOptionPane.showInputDialog("Digite o modelo A1:"));
+		auto1.cor = JOptionPane.showInputDialog("Digite a cor A1:");
+		auto1.combustivel = Integer.parseInt(JOptionPane.showInputDialog("Digite o combustível[1-Gasolina;2-Álcool;3-Diesel;4-Gás] A1:"));
+		auto2.modelo =Integer.parseInt(JOptionPane.showInputDialog("Digite o modelo A2:"));
+		auto2.cor = JOptionPane.showInputDialog("Digite a cor A2:");
+		auto2.combustivel = Integer.parseInt(JOptionPane.showInputDialog("Digite o combustível[1-Gasolina;2-Álcool;3-Diesel;4-Gás]A2:"));
+		
+		
+		
+		
+		
+		
+		//auto1.imprimir();
+		//JOptionPane.showMessageDialog(null,"Preço:R$"+auto1.combus()+"\nModelo:"+auto1.model()+"\nCor:"+auto1.cor()+"\nCombustível:"+auto1.tipocombus());
+		
+		
+
+	}
+
+}

@@ -1,0 +1,46 @@
+package prova02;
+
+import javax.swing.JOptionPane;
+
+public class questao2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		automovel car1 = new automovel();
+		automovel car2 = new automovel();
+		
+		JOptionPane.showMessageDialog(null, "insira os dados do primeiro carro.");
+		car1.modelo = JOptionPane.showInputDialog(null, "insira o modelo do carro:");
+		car1.cor = JOptionPane.showInputDialog(null, "insira acor do carro:");
+		car1.combustivel = Integer.parseInt(JOptionPane.showInputDialog(null, "Insira o combustivel do carro \n1-gasolina. \n2-alcool. \n3-diesel. \n4-gas."));
+		
+		JOptionPane.showMessageDialog(null, "insira os dados do segundo carro.");
+		car2.modelo = JOptionPane.showInputDialog(null, "insira o modelo do carro:");
+		car2.cor = JOptionPane.showInputDialog(null, "insira acor do carro:");
+		car2.combustivel = Integer.parseInt(JOptionPane.showInputDialog(null, "Insira o combustivel do carro \n1-gasolina. \n2-alcool. \n3-diesel. \n4-gas."));
+		
+		JOptionPane.showMessageDialog(null, "dados do primeiro carro.");
+		car1.preco();
+		car1.modelo();
+		car1.cor();
+		car1.nomecombus();
+		JOptionPane.showMessageDialog(null, "dados do segundo carro.");
+		car2.preco();
+		car2.modelo();
+		car2.cor();
+		car2.nomecombus();
+		
+		if (car1.preco > car2.preco){
+			JOptionPane.showMessageDialog(null, "o carro mais caro é "+car1.modelo+" e custa: "+car1.preco);
+		}
+		else if (car1.preco < car2.preco){
+			JOptionPane.showMessageDialog(null, "o carro mais caro é "+car2.modelo+" e custa: "+car2.preco);
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "Os carros tem o mesmo preço.");
+		}
+		
+
+	}
+
+}

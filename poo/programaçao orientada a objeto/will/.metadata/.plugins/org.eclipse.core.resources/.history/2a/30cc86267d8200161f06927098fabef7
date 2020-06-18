@@ -1,0 +1,62 @@
+import javax.swing.JOptionPane;
+
+public class automovel {
+	int modelo;
+	String cor;
+	int combustivel;
+	
+	/*void combus(){
+		switch(combustivel){
+			case 1:
+				JOptionPane.showMessageDialog(null,"Preço: R$12000");
+				break;
+			case 2:
+				JOptionPane.showMessageDialog(null,"Preço: R$10500");
+				break;
+			case 3:
+				JOptionPane.showMessageDialog(null,"Preço: R$20000");
+				break;
+			case 4:
+				JOptionPane.showMessageDialog(null,"Preço: R$13000");
+				break;
+			default:
+				JOptionPane.showMessageDialog(null,"Combustível inválido!!");
+				break;
+		}
+	}*/
+	
+	int combus(){
+		int preco=0;
+		switch (combustivel){
+			case 1:
+				preco = 12000;
+				break;
+			case 2:
+				preco = 10500;
+				break;
+			case 3:
+				preco = 20000;
+				break;
+			case 4:
+				preco = 13000;
+				break;
+		}
+		return preco;
+	}
+	
+	
+	
+	int model(){
+		return modelo;
+	}
+	
+	String cor(){
+		return cor;
+	}
+
+	int tipocombus(){
+		return combustivel;
+	}
+	
+	
+}

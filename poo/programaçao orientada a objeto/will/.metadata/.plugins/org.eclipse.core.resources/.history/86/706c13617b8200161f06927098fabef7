@@ -1,0 +1,18 @@
+import javax.swing.JOptionPane;
+
+public class testaAutomovel {
+
+	public static void main(String[] args) {
+		automovel auto1 = new automovel();
+		
+		auto1.modelo =Integer.parseInt(JOptionPane.showInputDialog("Digite o modelo:"));
+		auto1.cor = JOptionPane.showInputDialog("Digite o modelo:");
+		auto1.combustivel = Integer.parseInt(JOptionPane.showInputDialog("Digite o combustível:"));
+		
+		
+		
+		
+
+	}
+
+}

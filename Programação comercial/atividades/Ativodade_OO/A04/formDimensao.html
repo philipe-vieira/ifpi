@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action='TestaClasse.php?alter="alterar"' method="POST">
+            <label>Dimensão X: </label>
+            <input type="number" name="dimensaox" required="required" pattern=“[0-9]+$,[0-9][0-9]” title="Digite a dimensão da porta no eixo X."> <br>
+            <label>Dimensão Y: </label>
+            <input type="number" name="dimensaoy" required="required" pattern=“[0-9]+$,[0-9][0-9]” title="Digite a dimensão da porta no eixo X."><br>
+            <label>Dimensão Z: </label>
+            <input type="number" name="dimensaoz" required="required" pattern=“[0-9]+$,[0-9][0-9]” title="Digite a dimensão da porta no eixo X."><br>
+            <input type="submit" name="Enviar" value="enviar">
+        </form>
+    </body>
+</html>

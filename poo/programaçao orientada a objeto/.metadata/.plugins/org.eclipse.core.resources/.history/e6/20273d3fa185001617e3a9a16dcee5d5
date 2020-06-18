@@ -1,0 +1,14 @@
+package prova04;
+
+public class Banco {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Conta cont = new Conta();
+		
+		cont.inserir();
+		cont.menu();
+
+	}
+
+}

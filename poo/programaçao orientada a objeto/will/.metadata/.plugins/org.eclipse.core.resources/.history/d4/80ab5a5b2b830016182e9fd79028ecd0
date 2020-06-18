@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+
+public class Pessoa {
+	String nome;
+	String sexo;
+	int rg;
+	int ano_nasc;
+	
+	void entrada(){
+		nome = JOptionPane.showInputDialog(null,"Digite o nome:");
+		ano_nasc = Integer.parseInt(JOptionPane.showInputDialog("Digite seu ano de nascimento:"));
+		sexo = JOptionPane.showInputDialog("Digite o sexo:");
+	}
+	
+	
+	
+}

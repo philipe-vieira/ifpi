@@ -1,0 +1,21 @@
+package prova03;
+
+public class Calculadora {
+	private int x, y;
+	
+	int Somar(){
+		return x + y;
+	}
+	
+	int Subitrair(){
+		return x - y;
+	}
+	
+	int Multiplicar(){
+		return x * y;
+	}
+	
+	int Dividir(){
+		return x / y;
+	}
+}

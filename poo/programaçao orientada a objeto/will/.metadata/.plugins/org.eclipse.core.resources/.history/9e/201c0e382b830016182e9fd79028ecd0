@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+
+public class testaPessoa {
+
+	public static void main(String[] args) {
+		Pessoa p1 = new Pessoa();
+		Pessoa p2 = new Pessoa();
+		
+		p1.nome = JOptionPane.showInputDialog(null,"Digite o nome P1:");
+		p1.ano_nasc = Integer.parseInt(JOptionPane.showInputDialog("Digite seu ano de nascimento P1:"));
+		p1.sexo = JOptionPane.showInputDialog("Digite o sexo P1:");
+		p2.nome = JOptionPane.showInputDialog(null,"Digite o nome P2:");
+		p2.ano_nasc = Integer.parseInt(JOptionPane.showInputDialog("Digite seu ano de nascimento P2:"));
+		p2.sexo = JOptionPane.showInputDialog("Digite o sexo P2:");
+		
+		
+		
+		
+	}
+
+}

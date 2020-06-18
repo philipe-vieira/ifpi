@@ -1,0 +1,34 @@
+import javax.swing.JOptionPane;
+
+public class testaPessoa {
+
+	public static void main(String[] args) {
+		Pessoa p1 = new Pessoa();
+		Pessoa p2 = new Pessoa();
+		
+		p1.entrada();
+		p2.entrada();
+		
+		if(p1.sexo == "m"){
+			JOptionPane.showMessageDialog(null,"P1 é masculino!");
+			p1.imprimir();
+		}
+		else
+			if(p2.sexo=="m"){
+				JOptionPane.showMessageDialog(null,"P2 é masculino!");
+				p2.imprimir();
+			}
+		
+		if(p1.ano_nasc<p2.ano_nasc){
+			JOptionPane.showMessageDialog(null,"P1 é mais velho!!");
+			p1.imprimir();
+		}
+		else
+			if(p2.ano_nasc<p1.ano_nasc){
+				JOptionPane.showMessageDialog(null,"P2 é mais velho!!");
+				p2.imprimir();
+			}
+		
+	}
+
+}

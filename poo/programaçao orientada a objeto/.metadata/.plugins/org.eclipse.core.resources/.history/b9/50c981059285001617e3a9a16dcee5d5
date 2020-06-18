@@ -1,0 +1,31 @@
+package prova03;
+
+import javax.swing.JOptionPane;
+
+public class Calculadora {
+	private int x, y;
+	
+	int Somar(){
+		x = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro valor "));
+		y = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo valor valor "));
+		return x + y;
+	}
+	
+	int Subtrair(){
+		x = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro valor "));
+		y = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo valor valor "));
+		return x - y;
+	}
+	
+	int Multiplicar(){
+		x = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro valor "));
+		y = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo valor valor "));
+		return x * y;
+	}
+	
+	int Dividir(){
+		x = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro valor "));
+		y = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo valor valor "));
+		return x / y;
+	}
+}

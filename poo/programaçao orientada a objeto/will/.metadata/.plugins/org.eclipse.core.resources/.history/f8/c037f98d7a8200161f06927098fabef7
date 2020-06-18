@@ -1,0 +1,6 @@
+
+public class automovel {
+	int modelo;
+	String cor;
+	int combustivel;	
+}
